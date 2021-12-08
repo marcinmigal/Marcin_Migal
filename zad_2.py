@@ -1,5 +1,5 @@
-def multiply(number_a: int, number_b : int):
+def multiply(number_a: int, number_b: int):
     return number_a*number_b
 
 
-multiply(2,4)
+multiply(2, 4)
