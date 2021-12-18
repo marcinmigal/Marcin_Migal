@@ -1,10 +1,8 @@
 import cv2, pytesseract
-import matplotlib.pyplot as plt
 pytesseract.pytesseract.tesseract_cmd =r'C:\Program Files\Tesseract-OCR\tesseract'
-# pytesseract.pytesseract.tesseract_cmd =r'C:\Program Files\Tesseract-OCR'
 
 
-img = cv2.imread('photo_5.jpg')
+img = cv2.imread('photo_4.jpg')
 
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
