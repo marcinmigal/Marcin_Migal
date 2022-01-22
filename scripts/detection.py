@@ -1,7 +1,6 @@
 import numpy as np
 import imutils
 import cv2
-from imutils.object_detection import non_max_suppression
 
 
 def detect_person(hog, paths):
@@ -14,7 +13,6 @@ def detect_person(hog, paths):
                                                 padding=(10, 10), scale=1.05)
 
         rects = np.array([[x, y, x + w, y + h] for (x, y, w, h) in rects])
-        # pick = non_max_suppression(rects, probs=None, overlapThresh=0.3)
         for (xA, yA, xB, yB) in rects:
             cv2.rectangle(image, (xA, yA), (xB, yB), (0, 255, 0), 2)
         time_end = cv2.getTickCount()

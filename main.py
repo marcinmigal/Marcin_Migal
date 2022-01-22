@@ -2,7 +2,6 @@ import numpy as np
 import argparse
 import cv2
 from scripts.detection import detect_person
-from imutils.object_detection import non_max_suppression
 from imutils import paths
 
 ap = argparse.ArgumentParser()
